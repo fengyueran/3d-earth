@@ -27,8 +27,8 @@ export class RenderManager {
 
     const width = dom.clientWidth;
     const height = dom.clientHeight;
-    this.camera = new PerspectiveCamera(45, width / height, 0.1, 1000);
-    this.camera.position.set(0, 0, 26);
+    this.camera = new PerspectiveCamera(45, width / height, 1, 1000);
+    this.camera.position.set(0, 0, -30);
     this.camera.lookAt(new Vector3(0, 0, 0));
     this.renderer.setSize(width, height);
     this.renderer.setClearColor(new Color(0x000));
